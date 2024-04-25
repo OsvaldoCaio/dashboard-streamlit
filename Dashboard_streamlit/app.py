@@ -260,31 +260,22 @@ elif aba_selecionada == 'O Projeto':
 st.markdown("<hr>", unsafe_allow_html=True)
 #---------
 
-#img_path1 = "C:/Users/osval/Downloads/_DataVizandProductionModels_/precopetroleo.png"
-#url = "https://github.com/OsvaldoCaio/dashboard-streamlit/blob/ab2065762ae7badfe2da4d9ff4de7655322d1d7e/Dashboard_streamlit/precopetroleo.png"
-#image = Image.open("https://raw.githubusercontent.com/OsvaldoCaio/dashboard-streamlit/ab2065762ae7badfe2da4d9ff4de7655322d1d7e/Dashboard_streamlit/precopetroleo.png")
-
-#image_url = "https://raw.githubusercontent.com/OsvaldoCaio/dashboard-streamlit/ab2065762ae7badfe2da4d9ff4de7655322d1d7e/Dashboard_streamlit/precopetroleo.png"
-image_url = "https://github.com/OsvaldoCaio/dashboard-streamlit/raw/main/Dashboard_streamlit/precopetroleo_.png"
+#image_url = "https://github.com/OsvaldoCaio/dashboard-streamlit/raw/main/Dashboard_streamlit/precopetroleo_.png"
 
 # Baixar a imagem usando requests
-response = requests.get(image_url)
+#response = requests.get(image_url)
 
 # Abrir a imagem com o Pillow a partir dos bytes obtidos
-image = Image.open(BytesIO(response.content))
+#image = Image.open(BytesIO(response.content))
 
 # Exibir a imagem com Streamlit
-st.image(image,
-#st.image(img_path1,
-         width=80, 
-         caption="",  # Adicione uma descrição para a imagem aqui
-         output_format="PNG", 
-         use_column_width=True,
-)
-img_url = "https://github.com/OsvaldoCaio/dashboard-streamlit/raw/main/Dashboard_streamlit/powerbi_foto.png"
+#st.image(image,
+#         width=80, 
+#         caption="",  # Adicione uma descrição para a imagem aqui
+#         output_format="PNG", 
+#         use_column_width=True,
+#)
 
-# Carrega a imagem usando a função st.image()
-st.image(img_url, use_column_width=True, caption='Power BI Foto')
 
 st.markdown('<p class="footer">Fase4 - Data Viz and Production Models</p>', unsafe_allow_html=True)
 st.markdown('<p class="footer">Turma: 2TDAT - Tech Challenge - Grupo 82</p>', unsafe_allow_html=True)
