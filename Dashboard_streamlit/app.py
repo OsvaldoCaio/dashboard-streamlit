@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import subprocess
 import urllib.request
+from PIL import Image
 from io import BytesIO
 
 #determina cor da FIAP
