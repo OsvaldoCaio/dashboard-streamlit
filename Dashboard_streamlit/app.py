@@ -261,16 +261,10 @@ response = requests.get(image_url)
 # Abrir a imagem com o Pillow a partir dos bytes obtidos
 image = Image.open(BytesIO(response.content))
 
-# Redimensionar a imagem em 1/3 do tamanho original
-width, height = image.size
-new_width = int(width / 3)
-new_height = int(height / 3)
-image_resized = image.resize((new_width, new_height))
-
 # Exibir a imagem com Streamlit
-st.image(image_resized,
+st.image(image,
 #st.image(img_path1,
-         width=new_width, 
+         width=5, 
          caption="",  # Adicione uma descrição para a imagem aqui
          output_format="PNG", 
          use_column_width=True,
