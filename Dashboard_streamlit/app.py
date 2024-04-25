@@ -260,21 +260,21 @@ elif aba_selecionada == 'O Projeto':
 st.markdown("<hr>", unsafe_allow_html=True)
 #---------
 
-#image_url = "https://github.com/OsvaldoCaio/dashboard-streamlit/raw/main/Dashboard_streamlit/precopetroleo_.png"
+image_url = "https://github.com/OsvaldoCaio/dashboard-streamlit/raw/main/Dashboard_streamlit/capa.jpeg"
 
 # Baixar a imagem usando requests
-#response = requests.get(image_url)
+response = requests.get(image_url)
 
 # Abrir a imagem com o Pillow a partir dos bytes obtidos
-#image = Image.open(BytesIO(response.content))
+image = Image.open(BytesIO(response.content))
 
 # Exibir a imagem com Streamlit
-#st.image(image,
-#         width=80, 
-#         caption="",  # Adicione uma descrição para a imagem aqui
-#         output_format="PNG", 
-#         use_column_width=True,
-#)
+st.image(image,
+         width=80, 
+         caption="",  # Adicione uma descrição para a imagem aqui
+         output_format="PNG", 
+         use_column_width=True,
+)
 
 
 st.markdown('<p class="footer">Fase 4 - Data Viz and Production Models</p>', unsafe_allow_html=True)
