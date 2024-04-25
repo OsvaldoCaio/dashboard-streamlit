@@ -255,7 +255,7 @@ github_url = "https://github.com/OsvaldoCaio/dashboard-streamlit/blob/main/Dashb
 response = requests.get(github_url)
 image = Image.open(BytesIO(response.content))
 
-st.image(url,
+st.image(image,
 #st.image(img_path1,
          width=80, 
          caption="",  # Adicione uma descrição para a imagem aqui
