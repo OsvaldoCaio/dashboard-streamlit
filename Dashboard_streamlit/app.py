@@ -227,6 +227,7 @@ elif aba_selecionada == 'O Projeto':
     st.image(url_forecast, use_column_width=True, caption='Forecast Foto')
 
     st.write('Fonte: Código Python disponível no GitHub')
+    st.write("Clique [aqui](https://github.com/OsvaldoCaio/dashboard-streamlit/raw/main/Dashboard_streamlit/DTAT_Tech_Challenge_Grupo(Final).ipynb) e acesse o código no GitHub")
 
     # Adiciona um divisor horizontal
     st.markdown("<hr>", unsafe_allow_html=True)
