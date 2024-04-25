@@ -276,7 +276,7 @@ image = Image.open(BytesIO(response.content))
 # Exibir a imagem com Streamlit
 st.image(image,
 #st.image(img_path1,
-         width=5, 
+         width=80, 
          caption="",  # Adicione uma descrição para a imagem aqui
          output_format="PNG", 
          use_column_width=True,
