@@ -34,6 +34,10 @@ if aba_selecionada == 'O Desafio':
         "Essa base de dados histórica envolve duas colunas: data e preço (em dólares).",
         "Um grande cliente do segmento pediu para que a consultoria desenvolvesse um dashboard interativo e que gere insights relevantes para tomada de decisão. “Oh!” é esse Streamlit!",
         "Além disso, solicitaram que fosse desenvolvido um modelo de Machine Learning para fazer o forecasting do preço do petróleo.",
+        "",
+        "A plataforma está dividida em três abas, acessíveis à esquerda. A aba inicial, chamada 'O Desafio', fornece uma visão geral dos desafios a serem entregues.Em seguida, temos 'O Negócio', onde são abordadas informações específicas sobre o petróleo Brent. Por fim, na aba 'O Projeto', é possível encontrar previsões e análises futuras.",
+         "",
+        
     ]
     
     for paragraph in paragraphs:
