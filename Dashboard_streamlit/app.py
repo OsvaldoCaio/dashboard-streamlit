@@ -219,7 +219,7 @@ elif aba_selecionada == 'O Projeto':
     st.image(img_path, caption='Predição Foto')
 
     img_path = "C:/Users/osval/Downloads/_DataVizandProductionModels_/forecast.png"
-    #url_forecast = "https://github.com/OsvaldoCaio/dashboard-streamlit/raw/main/forecast.png"
+    #url_forecast = "https://github.com/OsvaldoCaio/dashboard-streamlit/blob/main/Dashboard_streamlit/forecast.png"
     st.image(img_path, caption='Forecast Foto')
 
     st.write('Fonte: Código Python disponível no GitHub')
