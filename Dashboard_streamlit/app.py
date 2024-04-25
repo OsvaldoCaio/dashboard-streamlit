@@ -18,15 +18,12 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-#começo do código para as abas
 st.title('Variação do Preço do Petróleo')
 #st.write('# Dados')
 
-# Opções de abas
 opcoes_abas = ['O Desafio', 'O Negócio', 'O Projeto']
 aba_selecionada = st.sidebar.selectbox('Escolha uma aba', opcoes_abas)
 
-# Conteúdo das abas
 if aba_selecionada == 'O Desafio':
     st.write('# > O Desafio')
     paragraphs = [
@@ -101,7 +98,6 @@ elif aba_selecionada == 'O Projeto':
     #with open("dtat_tech_challenge_grupo(final).py", "r") as file:
         #dados = file.read()
     #--------------------------------------------------
-    # Carrega o arquivo CSV
     #    file_path = "C:\\Users\\osval\\Downloads\\_DataVizandProductionModels_\\Preço - petróleo bruto - Brent (FOB).xlsx"
     #    df = pd.read_excel(file_path)
     # Exibe o DataFrame
@@ -122,32 +118,24 @@ elif aba_selecionada == 'O Projeto':
         #file_path = "C:\\Users\\osval\\Downloads\\_DataVizandProductionModels_\\Preço - petróleo bruto - Brent (FOB).xlsx"
         #df = pd.read_excel(file_path)
 
-# Definindo as datas inicial e final padrão
         data_inicial_padrao = pd.to_datetime('1987-05-20').date() 
         data_final_padrao = pd.to_datetime('2024-03-18').date() 
 
-# Criando campos de entrada de data
         data_inicial = st.date_input("Data Inicial", value=data_inicial_padrao, min_value=data_inicial_padrao)
         data_final = st.date_input("Data Final", value=data_final_padrao, max_value=pd.to_datetime('2024-03-18').date())
 
-# Convertendo a coluna 'data' para o tipo de dado date
         df['data'] = pd.to_datetime(df['data']).dt.date
 
-# Filtrando o DataFrame com base nas datas selecionadas
         df_filtrado = df[(df['data'] >= data_inicial) & (df['data'] <= data_final)]
 
-# Exibindo o DataFrame filtrado
         st.write(df_filtrado)
     #------------------------------------
-        # Carrega o arquivo
         #file_path = "C:\\Users\\osval\\Downloads\\_DataVizandProductionModels_\\Preço - petróleo bruto - Brent (FOB).xlsx"
         #df = pd.read_excel(file_path)
 
-        # Define os dados para o gráfico
         x = df_filtrado['data']
         y = df_filtrado['preco']
 
-    # Plota o gráfico de linhas com Matplotlib
         plt.figure(figsize=(10, 6))
         plt.plot(x, y, marker='o', linestyle='-')
         plt.title('Preço do Petróleo Bruto - Brent (FOB)')
@@ -156,7 +144,6 @@ elif aba_selecionada == 'O Projeto':
         plt.xticks(rotation=45)
         plt.grid(True)
 
-    # Mostra o gráfico usando Streamlit
         st.pyplot(plt)
 
     #------------------------------------------------------------------------
@@ -181,16 +168,12 @@ elif aba_selecionada == 'O Projeto':
     #    def main():
     #        st.title("Visualização do Power BI")
 
-    # URL de incorporação do Power BI para o seu relatório
     #    url_powerbi = "https://app.powerbi.com/groups/me/reports/82bf3b3c-d6d2-4c15-a51e-786c0072ac31?ctid=c56c8edc-eeb7-4c14-a1c4-c7215b5b0ad6&pbi_source=linkShare"
 
-    # Renderiza o iframe com o relatório do Power BI
     #st.markdown(f'<iframe width="800" height="600" src="{url_powerbi}" frameborder="0" allowFullScreen="true"></iframe>', unsafe_allow_html=True)
 
     #def main():
-    # Caminho para o arquivo Python que você deseja executar
     #    caminho_codigo = r'C:\Users\osval\Downloads\_DataVizandProductionModels_\dtat_tech_challenge_grupo(final).py'
-    # Executa o script Python usando o Streamlit
     #    subprocess.Popen(['streamlit', 'run', caminho_codigo])
 
     st.write("Clique [aqui](https://github.com/OsvaldoCaio/dashboard-streamlit/blob/main/Dashboard_streamlit/Postech_tc4.pbix) para abrir o arquivo do Power Bi no GitHub e conseguir ver suas funcionalidades.")
@@ -219,13 +202,10 @@ elif aba_selecionada == 'O Projeto':
     # Carrega a foto
     img_path = "C:/Users/osval/Downloads/_DataVizandProductionModels_/predicao.png"
     #url_predicao = "https://github.com/OsvaldoCaio/dashboard-streamlit/raw/main/predicao.png"
-# Exibe a foto
     st.image(img_path, caption='Predição Foto')
 
-    # Carrega a foto
     img_path = "C:/Users/osval/Downloads/_DataVizandProductionModels_/forecast.png"
     #url_forecast = "https://github.com/OsvaldoCaio/dashboard-streamlit/raw/main/forecast.png"
-# Exibe a foto
     st.image(img_path, caption='Forecast Foto')
 
     st.write('Fonte: Código Python disponível no GitHub')
@@ -243,16 +223,13 @@ elif aba_selecionada == 'O Projeto':
     for paragraph in paragraphs:
         st.write(paragraph, format="markdown")
 #---------------------------------------------------------
-# Carregar os dados do arquivo Excel
     file_path = "C:/Users/osval/Downloads/_DataVizandProductionModels_/forecast_postech_tc4.xlsx"
     df = pd.read_excel(file_path)
     #urlf = "https://github.com/OsvaldoCaio/dashboard-streamlit/raw/main/forecast_postech_tc4.xlsx"
     #df = pd.read_excel(urlf)
 
-# Exibir as primeiras 30 linhas do DataFrame
     st.write(df.head(30))
 
-# Criar o gráfico
     plt.figure(figsize=(10, 6))
     plt.plot(df['data'], df['Forecast'], marker='o', linestyle='-')
     plt.title('Forecast')
@@ -261,7 +238,6 @@ elif aba_selecionada == 'O Projeto':
     plt.xticks(df['data'][::2], rotation=45)
     plt.grid(True)
 
-# Exibir o gráfico
     st.pyplot(plt)
 
     st.write("Clique [aqui](https://github.com/OsvaldoCaio/data-analytics-postech-fiap/tree/main/Fase%204%20-%20Data%20Viz%20and%20Production%20Models) e acesse todo o conteúdo do trabalho no GitHub")
@@ -270,11 +246,9 @@ elif aba_selecionada == 'O Projeto':
 st.markdown("<hr>", unsafe_allow_html=True)
 #---------
 
-# Exibir a imagem no canto superior direito
 #img_path1 = "C:/Users/osval/Downloads/_DataVizandProductionModels_/precopetroleo.png"
 url = "https://github.com/OsvaldoCaio/dashboard-streamlit/blob/ab2065762ae7badfe2da4d9ff4de7655322d1d7e/Dashboard_streamlit/precopetroleo.png"
 
-# Exibir a imagem no canto superior direito
 st.image(url,
 #st.image(img_path1,
          width=80, 
