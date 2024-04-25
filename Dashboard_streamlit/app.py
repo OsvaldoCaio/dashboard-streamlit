@@ -264,7 +264,13 @@ image = Image.open(BytesIO(response.content))
 # Tamanho desejado da imagem
 desired_width = 50  # Altere o tamanho conforme necessário
 
-st.image(image,
+# Redimensionar a imagem para o tamanho desejado
+width_percent = (desired_width / float(image.size[0]))
+new_height = int((float(image.size[1]) * float(width_percent)))
+resized_image = image.resize((desired_width, new_height), Image.ANTIALIAS)
+
+# Exibir a imagem com Streamlit
+st.image(resized_image,
 #st.image(img_path1,
          width=desired_width, 
          caption="",  # Adicione uma descrição para a imagem aqui
