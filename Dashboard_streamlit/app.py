@@ -265,7 +265,7 @@ st.markdown("<hr>", unsafe_allow_html=True)
 #image = Image.open("https://raw.githubusercontent.com/OsvaldoCaio/dashboard-streamlit/ab2065762ae7badfe2da4d9ff4de7655322d1d7e/Dashboard_streamlit/precopetroleo.png")
 
 #image_url = "https://raw.githubusercontent.com/OsvaldoCaio/dashboard-streamlit/ab2065762ae7badfe2da4d9ff4de7655322d1d7e/Dashboard_streamlit/precopetroleo.png"
-image_url = "https://github.com/OsvaldoCaio/dashboard-streamlit/blob/main/Dashboard_streamlit/precopetroleo_.png"
+image_url = ""https://github.com/OsvaldoCaio/dashboard-streamlit/raw/main/Dashboard_streamlit/precopetroleo_.png""
 
 # Baixar a imagem usando requests
 response = requests.get(image_url)
