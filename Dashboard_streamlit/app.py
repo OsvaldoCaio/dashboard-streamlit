@@ -277,5 +277,5 @@ st.markdown("<hr>", unsafe_allow_html=True)
 #)
 
 
-st.markdown('<p class="footer">Fase4 - Data Viz and Production Models</p>', unsafe_allow_html=True)
+st.markdown('<p class="footer">Fase 4 - Data Viz and Production Models</p>', unsafe_allow_html=True)
 st.markdown('<p class="footer">Turma: 2TDAT - Tech Challenge - Grupo 82</p>', unsafe_allow_html=True)
