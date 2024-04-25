@@ -170,8 +170,13 @@ elif aba_selecionada == 'O Projeto':
             st.write(paragraph)
 
     # Carrega a foto
-    img_path = "C:/Users/osval/Downloads/_DataVizandProductionModels_/powerbi_foto.png"
-    st.image(img_path, caption='Power BI Foto')
+    #img_path = "C:/Users/osval/Downloads/_DataVizandProductionModels_/powerbi_foto.png"
+    #st.image(img_path, caption='Power BI Foto')
+    
+    img_url = "https://github.com/OsvaldoCaio/dashboard-streamlit/raw/main/Dashboard_streamlit/powerbi_foto.png"
+
+    # Carrega a imagem usando a função st.image()
+    st.image(img_url, use_column_width=True, caption='Power BI Foto')
 
     #-----------------------------------powerbi
     #    def main():
