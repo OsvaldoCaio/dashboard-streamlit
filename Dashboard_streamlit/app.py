@@ -262,7 +262,7 @@ response = requests.get(image_url)
 image = Image.open(BytesIO(response.content))
 
 # Tamanho desejado da imagem
-desired_width = 100  # Altere o tamanho conforme necessário
+desired_width = 50  # Altere o tamanho conforme necessário
 
 st.image(image,
 #st.image(img_path1,
