@@ -239,7 +239,7 @@ elif aba_selecionada == 'O Projeto':
 #---------------------------------------------------------
     #file_path = "C:/Users/osval/Downloads/_DataVizandProductionModels_/forecast_postech_tc4.xlsx"
     #df = pd.read_excel(file_path)
-    #>>>urlf = "https://github.com/OsvaldoCaio/dashboard-streamlit/raw/main/forecast_postech_tc4.xlsx"
+    df = pd.read_excel("https://github.com/OsvaldoCaio/dashboard-streamlit/raw/main/Dashboard_streamlit/forecast_postech_tc4.xlsx")
     #df = pd.read_excel(urlf)
 
     st.write(df.head(30))
