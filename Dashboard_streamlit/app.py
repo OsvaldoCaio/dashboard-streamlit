@@ -272,7 +272,7 @@ st.markdown("<hr>", unsafe_allow_html=True)
 
 # Exibir a imagem no canto superior direito
 #img_path1 = "C:/Users/osval/Downloads/_DataVizandProductionModels_/precopetroleo.png"
-url = "https://github.com/OsvaldoCaio/dashboard-streamlit/blob/main/Dashboard_streamlit/precopetroleo.png"
+url = "https://www.flaticon.com/br/icone-gratis/preco-do-petroleo_6607470?term=petrol&page=1&position=51&origin=search&related_id=6607470"
 
 # Exibir a imagem no canto superior direito
 st.image(url,
