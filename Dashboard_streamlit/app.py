@@ -263,8 +263,8 @@ image = Image.open(BytesIO(response.content))
 
 # Redimensionar a imagem em 1/3 do tamanho original
 width, height = image.size
-new_width = int(width / 3)
-new_height = int(height / 3)
+new_width = (width / 3)
+new_height = (height / 3)
 image_resized = image.resize((new_width, new_height))
 
 # Exibir a imagem com Streamlit
