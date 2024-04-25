@@ -281,6 +281,10 @@ st.image(image,
          output_format="PNG", 
          use_column_width=True,
 )
+img_url = "https://github.com/OsvaldoCaio/dashboard-streamlit/raw/main/Dashboard_streamlit/powerbi_foto.png"
 
+# Carrega a imagem usando a função st.image()
+st.image(img_url, use_column_width=True, caption='Power BI Foto')
 
+st.markdown('<p class="footer">Fase4 - Data Viz and Production Models</p>', unsafe_allow_html=True)
 st.markdown('<p class="footer">Turma: 2TDAT - Tech Challenge - Grupo 82</p>', unsafe_allow_html=True)
