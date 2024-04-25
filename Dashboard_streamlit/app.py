@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import subprocess
 import urllib.request
+from io import BytesIO
 
 #determina cor da FIAP
 st.markdown(
@@ -247,7 +248,12 @@ st.markdown("<hr>", unsafe_allow_html=True)
 #---------
 
 #img_path1 = "C:/Users/osval/Downloads/_DataVizandProductionModels_/precopetroleo.png"
-url = "https://github.com/OsvaldoCaio/dashboard-streamlit/blob/ab2065762ae7badfe2da4d9ff4de7655322d1d7e/Dashboard_streamlit/precopetroleo.png"
+#url = "https://github.com/OsvaldoCaio/dashboard-streamlit/blob/ab2065762ae7badfe2da4d9ff4de7655322d1d7e/Dashboard_streamlit/precopetroleo.png"
+github_url = "https://github.com/OsvaldoCaio/dashboard-streamlit/blob/ab2065762ae7badfe2da4d9ff4de7655322d1d7e/Dashboard_streamlit/precopetroleo.png?raw=true"
+
+# Obter a imagem usando requests
+response = requests.get(github_url)
+image = Image.open(BytesIO(response.content))
 
 st.image(url,
 #st.image(img_path1,
