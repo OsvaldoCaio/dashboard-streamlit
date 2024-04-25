@@ -262,7 +262,7 @@ response = requests.get(image_url)
 image = Image.open(BytesIO(response.content))
 
 # Tamanho desejado da imagem
-desired_width = 50  # Altere o tamanho conforme necessário
+desired_width = 80  # Altere o tamanho conforme necessário
 
 # Redimensionar a imagem para o tamanho desejado
 aspect_ratio = image.width / image.height
