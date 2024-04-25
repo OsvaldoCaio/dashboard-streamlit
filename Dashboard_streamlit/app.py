@@ -270,7 +270,7 @@ image_resized = image.resize((new_width, new_height))
 # Exibir a imagem com Streamlit
 st.image(image_resized,
 #st.image(img_path1,
-         width=desired_width, 
+         width=new_width, 
          caption="",  # Adicione uma descrição para a imagem aqui
          output_format="PNG", 
          use_column_width=True,
