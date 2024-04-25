@@ -268,7 +268,7 @@ desired_width = 80  # Altere o tamanho conforme necessário
 resized_image = image.resize((desired_width, desired_height))
 
 # Exibir a imagem com Streamlit
-st.image(resized_image,
+st.image(image,
 #st.image(img_path1,
          width=desired_width, 
          caption="",  # Adicione uma descrição para a imagem aqui
