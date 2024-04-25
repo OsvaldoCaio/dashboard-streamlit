@@ -261,9 +261,12 @@ response = requests.get(image_url)
 # Abrir a imagem com o Pillow a partir dos bytes obtidos
 image = Image.open(BytesIO(response.content))
 
+# Tamanho desejado da imagem
+desired_width = 100  # Altere o tamanho conforme necessário
+
 st.image(image,
 #st.image(img_path1,
-         width=10, 
+         width=desired_width, 
          caption="",  # Adicione uma descrição para a imagem aqui
          output_format="PNG", 
          use_column_width=True,
