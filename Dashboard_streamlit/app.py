@@ -263,7 +263,7 @@ image = Image.open(BytesIO(response.content))
 
 st.image(image,
 #st.image(img_path1,
-         width=80, 
+         width=10, 
          caption="",  # Adicione uma descrição para a imagem aqui
          output_format="PNG", 
          use_column_width=True,
