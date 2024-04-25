@@ -8,7 +8,6 @@ import urllib.request
 import requests
 from PIL import Image
 from io import BytesIO
-pip install openpyxl
 
 #determina cor da FIAP
 st.markdown(
