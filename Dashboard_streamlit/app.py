@@ -256,7 +256,7 @@ st.image(image,
          width=80, 
          caption="",  # Adicione uma descrição para a imagem aqui
          output_format="PNG", 
-         use_column_width=False,
+         use_column_width=True,
 )
 
 
