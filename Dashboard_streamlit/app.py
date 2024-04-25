@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import subprocess
 import urllib.request
+import requests
 from PIL import Image
 from io import BytesIO
 
@@ -250,7 +251,15 @@ st.markdown("<hr>", unsafe_allow_html=True)
 
 #img_path1 = "C:/Users/osval/Downloads/_DataVizandProductionModels_/precopetroleo.png"
 #url = "https://github.com/OsvaldoCaio/dashboard-streamlit/blob/ab2065762ae7badfe2da4d9ff4de7655322d1d7e/Dashboard_streamlit/precopetroleo.png"
-image = Image.open("https://raw.githubusercontent.com/OsvaldoCaio/dashboard-streamlit/ab2065762ae7badfe2da4d9ff4de7655322d1d7e/Dashboard_streamlit/precopetroleo.png")
+#image = Image.open("https://raw.githubusercontent.com/OsvaldoCaio/dashboard-streamlit/ab2065762ae7badfe2da4d9ff4de7655322d1d7e/Dashboard_streamlit/precopetroleo.png")
+
+image_url = "https://raw.githubusercontent.com/OsvaldoCaio/dashboard-streamlit/ab2065762ae7badfe2da4d9ff4de7655322d1d7e/Dashboard_streamlit/precopetroleo.png"
+
+# Baixar a imagem usando requests
+response = requests.get(image_url)
+
+# Abrir a imagem com o Pillow a partir dos bytes obtidos
+image = Image.open(BytesIO(response.content))
 
 st.image(image,
 #st.image(img_path1,
