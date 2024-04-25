@@ -271,10 +271,12 @@ st.markdown("<hr>", unsafe_allow_html=True)
 #---------
 
 # Exibir a imagem no canto superior direito
-img_path1 = "C:/Users/osval/Downloads/_DataVizandProductionModels_/precopetroleo.png"
+#img_path1 = "C:/Users/osval/Downloads/_DataVizandProductionModels_/precopetroleo.png"
+url = "https://github.com/OsvaldoCaio/dashboard-streamlit/blob/main/Dashboard_streamlit/precopetroleo.png"
 
 # Exibir a imagem no canto superior direito
-st.image(img_path1,
+st.image(url,
+#st.image(img_path1,
          width=80, 
          caption="",  # Adicione uma descrição para a imagem aqui
          output_format="PNG", 
