@@ -115,13 +115,12 @@ elif aba_selecionada == 'O Projeto':
         for paragraph in paragraphs:
             st.write(paragraph)
 
-        excel_url = "https://github.com/OsvaldoCaio/dashboard-streamlit/raw/main/Dashboard_streamlit/Pre%C3%A7o%20-%20petr%C3%B3leo%20bruto%20-%20Brent%20(FOB).xlsx"
-
         # Carregar o arquivo Excel usando pandas
-        df = pd.read_excel(excel_url)
+        df = pd.read_excel("https://github.com/OsvaldoCaio/dashboard-streamlit/raw/main/Dashboard_streamlit/Pre%C3%A7o%20-%20petr%C3%B3leo%20bruto%20-%20Brent%20(FOB).xlsx")
 
         # Exibir os dados no Streamlit
         st.write(df)
+        
         #excel = "C:\\Users\\osval\\Downloads\\_DataVizandProductionModels_\\Preço - petróleo bruto - Brent (FOB).xlsx"
         #df = pd.read_excel(excel)
 
