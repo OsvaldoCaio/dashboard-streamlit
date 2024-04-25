@@ -215,11 +215,11 @@ elif aba_selecionada == 'O Projeto':
 
     # Carrega a foto
     #img_path = "C:/Users/osval/Downloads/_DataVizandProductionModels_/predicao.png"
-    url_predicao = "https://github.com/OsvaldoCaio/dashboard-streamlit/blob/main/Dashboard_streamlit/predicao.png"
+    url_predicao = "https://github.com/OsvaldoCaio/dashboard-streamlit/raw/main/Dashboard_streamlit/predicao.png"
     st.image(url_predicao, use_column_width=True, caption='Predição Foto')
 
     #img_path = "C:/Users/osval/Downloads/_DataVizandProductionModels_/forecast.png"
-    url_forecast = "https://github.com/OsvaldoCaio/dashboard-streamlit/blob/main/Dashboard_streamlit/forecast.png"
+    url_forecast = "https://github.com/OsvaldoCaio/dashboard-streamlit/raw/main/Dashboard_streamlit/forecast.png"
     st.image(url_forecast, use_column_width=True, caption='Forecast Foto')
 
     st.write('Fonte: Código Python disponível no GitHub')
@@ -237,9 +237,9 @@ elif aba_selecionada == 'O Projeto':
     for paragraph in paragraphs:
         st.write(paragraph, format="markdown")
 #---------------------------------------------------------
-    file_path = "C:/Users/osval/Downloads/_DataVizandProductionModels_/forecast_postech_tc4.xlsx"
-    df = pd.read_excel(file_path)
-    #urlf = "https://github.com/OsvaldoCaio/dashboard-streamlit/raw/main/forecast_postech_tc4.xlsx"
+    #file_path = "C:/Users/osval/Downloads/_DataVizandProductionModels_/forecast_postech_tc4.xlsx"
+    #df = pd.read_excel(file_path)
+    #>>>urlf = "https://github.com/OsvaldoCaio/dashboard-streamlit/raw/main/forecast_postech_tc4.xlsx"
     #df = pd.read_excel(urlf)
 
     st.write(df.head(30))
