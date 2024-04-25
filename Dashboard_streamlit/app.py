@@ -216,11 +216,11 @@ elif aba_selecionada == 'O Projeto':
     # Carrega a foto
     #img_path = "C:/Users/osval/Downloads/_DataVizandProductionModels_/predicao.png"
     url_predicao = "https://github.com/OsvaldoCaio/dashboard-streamlit/blob/main/Dashboard_streamlit/predicao.png"
-    st.image(url_predicao, caption='Predição Foto')
+    st.image(url_predicao, use_column_width=True, caption='Predição Foto')
 
     #img_path = "C:/Users/osval/Downloads/_DataVizandProductionModels_/forecast.png"
     url_forecast = "https://github.com/OsvaldoCaio/dashboard-streamlit/blob/main/Dashboard_streamlit/forecast.png"
-    st.image(url_forecast, caption='Forecast Foto')
+    st.image(url_forecast, use_column_width=True, caption='Forecast Foto')
 
     st.write('Fonte: Código Python disponível no GitHub')
 
