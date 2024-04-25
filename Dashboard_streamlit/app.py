@@ -132,10 +132,10 @@ elif aba_selecionada == 'O Projeto':
         #df = pd.read_excel(file_path)
 
         data_inicial_padrao = pd.to_datetime('1987-05-20').date() 
-        data_final_padrao = pd.to_datetime('2024-03-28').date() 
+        data_final_padrao = pd.to_datetime('2024-03-18').date() 
 
         data_inicial = st.date_input("Data Inicial", value=data_inicial_padrao, min_value=data_inicial_padrao)
-        data_final = st.date_input("Data Final", value=data_final_padrao, max_value=pd.to_datetime('2024-03-28').date())
+        data_final = st.date_input("Data Final", value=data_final_padrao, max_value=pd.to_datetime('2024-03-18').date())
 
         df['data'] = pd.to_datetime(df['data']).dt.date
 
@@ -206,7 +206,7 @@ elif aba_selecionada == 'O Projeto':
             "Desenvolvido um modelo de Machine Learning em Python para análise de séries temporais, utilizando a base de dados de preços do petróleo Brent - US$.",
             "Devido às flutuações durante a pandemia, foram selecionados os dados para previsão e projeção dentro do intervalo especificado abaixo:",
             "Data de Início: 01/01/2023",
-            "Data de Término: 28/03/2024",
+            "Data de Término: 18/03/2024",
             "",
             "",
             "Gráficos da Predição e Forecast."
