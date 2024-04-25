@@ -249,7 +249,7 @@ st.markdown("<hr>", unsafe_allow_html=True)
 
 #img_path1 = "C:/Users/osval/Downloads/_DataVizandProductionModels_/precopetroleo.png"
 #url = "https://github.com/OsvaldoCaio/dashboard-streamlit/blob/ab2065762ae7badfe2da4d9ff4de7655322d1d7e/Dashboard_streamlit/precopetroleo.png"
-image = Image.open("Dashboard_streamlit/precopetroleo.png")
+image = Image.open("https://raw.githubusercontent.com/OsvaldoCaio/dashboard-streamlit/ab2065762ae7badfe2da4d9ff4de7655322d1d7e/Dashboard_streamlit/precopetroleo.png")
 
 st.image(image,
 #st.image(img_path1,
